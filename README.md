@@ -1,52 +1,54 @@
-Autocomplete_for_Omero_v2.0
----------------------------------------------------------------
+# Species Autocomplete for OMERO v2.0
 
-Overview
+## Overview
+The **Species Autocomplete Extension** helps users autocomplete genus and species names on webpages, preventing misspellings and inconsistencies by referencing a preloaded list. The list is updated from a CSV file, which must contain only one column with taxa names and no header.
 
-The Species Autocomplete Extension helps users autocomplete genus and species names on webpages to prevent misspelling or incosisntent names by referencing a preloaded list. This list must be updated from a CSV file, this CSV file must have only one column with the name of the taxa and no header. 
-The extension was created focused on creating consistent OMERO tags (for palynologcal taxonomy).
-!!!The current version of the extension ONLY supports Google Chrome browser and Chromiun based browsers like Microsoft Edge .¡¡¡
+This extension was created to ensure consistent OMERO tags for palynological taxonomy.
 
-Features:
+⚠ **Currently, the extension ONLY supports Google Chrome and Chromium-based browsers like Microsoft Edge.**
 
--Works on any text input or textarea on any webpage (created focusing on OMERO tags).
--Shows suggestions as you type.
--Clicking a suggestion fills in the input.
--Suggestions follow the input as you scroll.
--Limited to 15 suggestions at a time for performance.
--Persists species list across browser sessions.
--Can be activated and deactivated with a button.
--Lets the user select the separator of the CSV file.
--Shows the number of species loaded (excludes duplicates).
--Shows first the last species selected by the user.
+## Features
+- Works on any text input or textarea on any webpage (optimized for OMERO tags).
+- Displays suggestions as you type.
+- Allows selecting a suggestion by clicking it.
+- Suggestions remain visible as you scroll.
+- Limits to 15 suggestions at a time for performance optimization.
+- Persists the species list across browser sessions.
+- Can be activated or deactivated with a button.
+- Allows selecting the CSV file separator.
+- Displays the number of species loaded (excluding duplicates).
+- Prioritizes the last species selected by the user.
 
-Installation:
+## Installation
+1. Open Chrome and go to `chrome://extensions/`.
+2. Enable **Developer mode** (toggle in the top right corner).
+3. Click **Load unpacked** and select the `species-autocomplete` folder.
+4. The extension icon should now appear in your browser toolbar, indicating it is ready for use.
 
--Open Chrome and go to chrome://extensions/.
--Enable Developer mode (toggle in the top right).
--Click on Load unpacked and select the folder "species-autocomplete" that is in the same folder as this txt file.
--The extension icon should now appear in your browser toolbar, indicating it is ready for use.
+## Usage
+1. Click the extension icon in your browser toolbar.
+2. Select the separator of your CSV file.
+3. Upload your species list (`.csv` file) with a single column of taxa names and no header.
+4. The popup will display the number of species loaded and a preview of the parsed data.
+5. Toggle the **Autocomplete** feature:
+   - "Autocomplete **Inactive**" (red) → Click to activate.
+   - "Autocomplete **Active**" (green) → Click to deactivate.
+6. When active, the extension suggests species names based on the loaded data.
 
-Usage:
+### Updating the Species List
+- Upload a new CSV file and reload the extension.
+- Verify the updated species count in the popup.
 
--Click the extension icon in your browser toolbar.
--Select the separator of your CSV file.
--Upload your species list .csv file that must have only one column with the name of the taxa and no header.
--The popup will display the number of species loaded and ahow a preview of the parsed data.
--In the popup, you will see a button labeled "Autocomplete Active" (green) or "Autocomplete inactive" (red):
---Click "Autocomplete inactive" to activate the autocomplete feature.
---Click "Autocomplete Active" to deactivate it.
--When active, the extension will automatically suggest species names based on the data you've loaded.
+⚠ Ensure the necessary permissions are enabled for the extension to function correctly on the target webpages.
 
-Check that the necessary permissions are enabled for the extension to access the target pages.
+## Additional Notes
+- **Privacy:** The extension does not store or transmit any personal data (it runs locally).
+- **Icon Image:** A confocal microscopy image of *Grimsdalea magnaclavata* (Pollen Geo).
+- **Permissions:** Requires access to local storage and specific webpages to enable autocomplete functionality.
 
-If you need to update the species list, add the new CSV file and reload the extension.
-Confirm the species count has updated in the popup.
+## Version
+- **v2.0**
 
-Additional Notes
-Privacy: The extension does not store or transmit any personal data (The extension works locally).
-Icon image: Picture of a pollen grain of Grimsdalea magnaclavata, taken with Confocal microscopy, Pollen Geo.
-Permissions: The extension requires access to local storage and access to specific webpages to enable autocomplete functionality.
-Version: 0.1
-Author: David Caro
-Author email: decaroc@unal.edu.co
+## Author
+- **David Caro**  
+- 📧 [decaroc@unal.edu.co](mailto:decaroc@unal.edu.co)
